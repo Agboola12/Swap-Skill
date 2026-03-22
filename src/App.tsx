@@ -3,8 +3,8 @@ import { ToastContainer } from "react-toastify";
 import { Helmet } from "react-helmet-async";  
 import ScrollToTop from "./ScrollToTop";
 import Home from "./pages/Home";
-import Register from "./pages/Register";
-import Login from "./pages/Login";
+import LoginPage from "./pages/Login";
+import SignUpPage from "./pages/Register";
 
 const App = () => {
   return (
@@ -17,8 +17,8 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/login" element={<LoginPage />} />
           
         </Routes>
       </Router>
