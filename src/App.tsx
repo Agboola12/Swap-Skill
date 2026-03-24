@@ -5,6 +5,7 @@ import ScrollToTop from "./ScrollToTop";
 import Home from "./pages/Home";
 import LoginPage from "./pages/Login";
 import SignUpPage from "./pages/Register";
+import Profile from "./pages/User/Profile";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/signup" element={<SignUpPage />} />
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/profile" element={<Profile />} />
           
         </Routes>
       </Router>
