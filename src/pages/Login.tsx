@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 interface LoginFormData {
   email: string;
@@ -52,6 +53,7 @@ export default function LoginPage() {
     if (validateForm()) {
       console.log('Login submitted:', formData);
       // Handle login here
+
     }
   };
 
@@ -75,9 +77,8 @@ export default function LoginPage() {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none transition-colors ${
-                errors.email ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-2 border rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none transition-colors ${errors.email ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="john.doe@university.edu"
             />
             {errors.email && (
@@ -96,9 +97,8 @@ export default function LoginPage() {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none transition-colors ${
-                errors.password ? 'border-red-500' : 'border-gray-300'
-              }`}
+              className={`w-full px-4 py-2 border rounded-lg focus:ring-purple-500 focus:border-purple-500 outline-none transition-colors ${errors.password ? 'border-red-500' : 'border-gray-300'
+                }`}
               placeholder="••••••••"
             />
             {errors.password && (
@@ -123,12 +123,14 @@ export default function LoginPage() {
             </a>
           </div>
 
-          <button
-            type="submit"
-            className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors font-medium"
-          >
-            Sign In
-          </button>
+          <Link to="/dashboard">
+            <button
+              type="submit"
+              className="w-full bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors font-medium"
+            >
+              Sign In
+            </button>
+          </Link>
 
           <p className="text-center text-sm text-gray-600 mt-4">
             Don't have an account?{' '}

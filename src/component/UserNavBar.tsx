@@ -35,6 +35,9 @@ const UserNavBar: React.FC = () => {
                     <Link to="/profile" className="block px-4 py-2 text-white font-semibold ">
                         Profile
                     </Link>
+                    <Link to="/login" className="block px-4 py-2 text-white font-semibold ">
+                        LogOut
+                    </Link>
                 </div>
 
                 {/* Mobile menu button */}
