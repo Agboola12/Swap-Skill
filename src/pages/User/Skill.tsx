@@ -1,4 +1,3 @@
-import { Link } from "react-router"
 import UserNavBar from "../../component/UserNavBar"
 
 const Skill = () => {

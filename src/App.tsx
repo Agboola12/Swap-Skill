@@ -7,6 +7,7 @@ import LoginPage from "./pages/Login";
 import SignUpPage from "./pages/Register";
 import Profile from "./pages/User/Profile";
 import Skill from "./pages/User/Skill";
+import DashBoard from "./pages/User/DashBoard";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/browse-skill" element={<Skill />} />
+          <Route path="/dashboard" element={<DashBoard />} />
           
         </Routes>
       </Router>

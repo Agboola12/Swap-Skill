@@ -57,7 +57,7 @@ const Profile = () =>  {
     <>
     <UserNavBar/>
       {/* Profile Card */}
-      <div className="w-[40%] background py-10 px-6 mt-10 mx-auto rounded-[12px] shadow-xl relative">
+      <div className="w-[70%] background py-10 px-6 mt-10 mx-auto rounded-[12px] shadow-xl relative">
         {/* Edit Button */}
         <button 
           onClick={() => setIsModalOpen(true)}
