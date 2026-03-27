@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router';
 
 interface SignUpFormData {
   fullname: string;
@@ -231,9 +232,9 @@ export default function SignUpPage() {
 
           <p className="text-center text-sm text-gray-600 mt-4">
             Already have an account?{' '}
-            <a href="/login" className="text-purple-600 hover:text-purple-700 font-medium">
+            <Link to="/login" className="text-purple-600 hover:text-purple-700 font-medium">
               Sign in
-            </a>
+            </Link>
           </p>
         </form>
       </div>
