@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       <div className="bg-white">
-        <div className="container px-10 pt-[2em] lg:pt-0 pb-10 mx-auto items-center  ">
+        <div className="container px-10 pt-[2em] lg:pt-0 pb-10 mx-auto items-center " id="howItWork">
           <p className="text text-[3em] text-center font-bold">How It Works</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
             <div className="background text-white py-10 px-4 rounded-[12px]">

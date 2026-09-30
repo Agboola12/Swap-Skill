@@ -56,9 +56,9 @@ const NavBar: React.FC = () => {
                     <Link
                         to="/"
                         className="block  font-medium text-left px-10 py-3 text-black hover:bg-gray-200"
-                        onClick={() => setIsOpen(false)}
+                        onClick={() => setIsOpen(false)} 
                     >
-                        How It Work
+                        <a href="#howItWork"> How It Work </a>
                     </Link>
 
                     <Link
