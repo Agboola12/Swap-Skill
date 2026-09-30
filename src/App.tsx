@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Helmet>
-        <title>Outcome School</title>
+        <title>Skill Swap</title>
       </Helmet>
       <Router>
         <ScrollToTop />
